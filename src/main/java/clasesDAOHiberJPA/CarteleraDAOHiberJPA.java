@@ -16,7 +16,7 @@ public class CarteleraDAOHiberJPA<T> extends GenericoDAOHibernateJPA<Cartelera> 
 		this.persistentClass = Cartelera.class;		
 	}
 	
-	
+	/*
 	@Override
 	public List<Cartelera> recuperar(){
 		
@@ -30,6 +30,6 @@ public class CarteleraDAOHiberJPA<T> extends GenericoDAOHibernateJPA<Cartelera> 
 		return resultado;	
 
 	}
-
+*/
 	
 }
