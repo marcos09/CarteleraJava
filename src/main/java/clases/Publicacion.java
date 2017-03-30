@@ -5,7 +5,6 @@ import java.util.Set;
 
 import javax.persistence.*;
 
-import org.springframework.stereotype.Repository;
 @Entity
 @Table(name="Publicacion")
  
@@ -16,7 +15,9 @@ public class Publicacion implements Serializable{
 
 	@Id @GeneratedValue
 	private Long id;
-	private String nombrePublicacion;
+	private String titulo;
+	
+	private String descripcion;
 
 	private String estado="Habilitado";
 	
@@ -85,20 +86,28 @@ public class Publicacion implements Serializable{
 		this.comentarios = comentarios;
 	}
 
-	public String getNombrePublicacion() {
-		return nombrePublicacion;
-	}
-	
-	public void setNombrePublicacion(String nombrePublicacion) {
-		this.nombrePublicacion = nombrePublicacion;
-	}
-	
 	public Usuario getAutorPublicacion() {
 		return autorPublicacion;
 	}
 	
 	public void setAutorPublicacion(Usuario autor) {
 		this.autorPublicacion = autor;
+	}
+
+	public String getTitulo() {
+		return titulo;
+	}
+
+	public void setTitulo(String titulo) {
+		this.titulo = titulo;
+	}
+
+	public String getDescripcion() {
+		return descripcion;
+	}
+
+	public void setDescripcion(String descripcion) {
+		this.descripcion = descripcion;
 	}
 	
 
