@@ -9,8 +9,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
-
-import Daos.CarteleraDAO;
 import clases.*;
 
 
@@ -49,11 +47,7 @@ public class Login extends HttpServlet {
 				//rol , 1 es el numero de rol. Van del 0 al 3.
 				sesion.setAttribute("rol",1);
 				sesion.setAttribute("error", null);
-				/*se que es feo es solo para la maqueta*/
-				if(1 < 2)
-					url=request.getContextPath() + "/admin/administracion.jsp";
-				else
-					url=request.getContextPath() + "/cartelera.jsp";
+				url=request.getContextPath() + "/admin/administracion.jsp";
 			}
 			else
 				sesion.setAttribute("error", "contraseña incorrecta");

@@ -5,8 +5,6 @@ import java.util.Set;
 
 import javax.persistence.*;
 
-import org.springframework.stereotype.Component;
-
 @Entity
 public class UsuarioOnline extends Usuario {
 	

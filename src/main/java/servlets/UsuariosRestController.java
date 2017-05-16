@@ -9,25 +9,25 @@ import Daos.UsuariosDAO;
 import clases.*;
 
 @RestController
-public class PublicacionesRestController {
+public class UsuariosRestController {
 	
 	@Autowired
-	private UsuariosDAO publicacionDAO;
+	private UsuariosDAO usuariosDAO;
 	
 	public UsuariosDAO getCarteleraDAO() {
-		return publicacionDAO;
+		return usuariosDAO;
 	}
 	
 	public void setCarteleraDAO(UsuariosDAO publicacionDAO) {
-		this.publicacionDAO = publicacionDAO;
+		this.usuariosDAO = publicacionDAO;
 	}
-
+/*
     
-	@RequestMapping(value = "/publicaciones", method = RequestMethod.GET)
+	@RequestMapping(value = "/usuarios", method = RequestMethod.GET)
 	
 	public ResponseEntity<List<Publicacion>> listado() {
 
-		List<Publicacion> publicaciones = publicacionDAO.recuperar();
+		List<Publicacion> publicaciones = usuariosDAO.recuperar();
 		if(publicaciones == null){
 			return new ResponseEntity<List<Publicacion>>(HttpStatus.NO_CONTENT);
 
@@ -50,7 +50,7 @@ public class PublicacionesRestController {
 		//p.setAutorPublicacion(idAutor);
 		//p.setCartelera(idCartelera);
 		p.setComentariosHab(habComent);
-		publicacionDAO.agregar(p);
+		usuariosDAO.agregar(p);
 		
 		return new ResponseEntity<Void>(HttpStatus.CREATED);
 	}

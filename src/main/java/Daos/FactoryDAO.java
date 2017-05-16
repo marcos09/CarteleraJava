@@ -36,8 +36,8 @@ public class FactoryDAO {
 		return (CarteleraDAO) carteleraDAOHiberJPA;
 	}
 	
-	public PublicacionDAO getPublicacionDAO(){
-		return (PublicacionDAO) publicacionDAOHiberJPA;
+	public UsuariosDAO getPublicacionDAO(){
+		return (UsuariosDAO) publicacionDAOHiberJPA;
 	}
 		
 	public ComentarioDAO getComentarioDAO(){

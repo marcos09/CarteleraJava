@@ -12,7 +12,6 @@ import javax.persistence.JoinTable;
 */
 import javax.persistence.ManyToMany;
 
-import org.springframework.stereotype.Repository;
 
 @Entity
 public class PublicadorPermisos extends Usuario{

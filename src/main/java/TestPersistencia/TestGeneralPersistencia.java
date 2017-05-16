@@ -26,8 +26,6 @@ public class TestGeneralPersistencia extends HttpServlet {
 		
 		CarteleraDAO carteleraDAO = fd.getCarteleraDAO();
 		ComentarioDAO comentarioDAO = fd.getComentarioDAO();
-		UsuarioOnlineDAO userOnlineDAO = fd.getUsuariosOnlineDAO();
-		PublicadorPermisosDAO ppDAO = fd.getPublicadorPermisosDAO();
 		
 		Publicacion publicacion = new Publicacion();
 		Publicacion publicacion1 = new Publicacion();
@@ -80,12 +78,12 @@ public class TestGeneralPersistencia extends HttpServlet {
 		
 		/* Setters Publicaciones */
 		publicacion.setAutorPublicacion(docente);
-		publicacion.setNombrePublicacion("Publicacion del docente");
+		publicacion.setTitulo("Publicacion del docente");
 		publicacion.agregarComentario(coment1);
 		publicacion.agregarComentario(coment2);
 		
 		publicacion1.setAutorPublicacion(user3);
-		publicacion1.setNombrePublicacion("Publicacion del user3");
+		publicacion1.setTitulo("Publicacion del user3");
 		publicacion1.agregarComentario(coment3);
 		
 		/* Setters Carteleras */

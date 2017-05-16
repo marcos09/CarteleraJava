@@ -1,13 +1,12 @@
 package clasesDAOHiberJPA;
 
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Repository;
 
-import Daos.PublicacionDAO;
+import Daos.UsuariosDAO;
 import clases.Publicacion;
 
 @Repository
-public class PublicacionDAOHiberJPA extends GenericoDAOHibernateJPA<Publicacion> implements PublicacionDAO {
+public class PublicacionDAOHiberJPA extends GenericoDAOHibernateJPA<Publicacion> implements UsuariosDAO {
 
 	public PublicacionDAOHiberJPA() {
 		this.persistentClass = Publicacion.class;		

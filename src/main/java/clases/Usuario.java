@@ -6,9 +6,6 @@ import java.util.Set;
 */
 import javax.persistence.*;
 
-import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Repository;
-
 @Entity
  
 public class Usuario implements Serializable {

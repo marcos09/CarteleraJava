@@ -3,7 +3,6 @@ package clasesDAOHiberJPA;
 import java.util.List;
 import javax.persistence.*;
 
-import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
 import Interface.GenericDAO;
@@ -63,9 +62,6 @@ public class GenericoDAOHibernateJPA<T> implements GenericDAO<T>{
 		Query consulta= em.createQuery("from " + getPersistentClass().getSimpleName());
 		
 		List<T> resultado = consulta.getResultList();
-		if (resultado.isEmpty()){
-			return null;
-		}
 		return resultado;	
 
 	}
