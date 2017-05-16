@@ -9,7 +9,6 @@
 	</jsp:include>
 </head>
 <body>
-	<jsp:include page="common/navbar.jsp" flush="true" ></jsp:include>
 	<jsp:include page="default/news.jsp" flush="true" ></jsp:include>
 	
 	<jsp:include page="default/events.jsp" flush="true" >
